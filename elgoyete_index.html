@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>elgoyete.com</title>
+  <style>
+    body {
+      margin: 0;
+      background: radial-gradient(circle at center, #1e1e1e, #000000);
+      color: #fff;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      overflow-x: hidden;
+      scroll-behavior: smooth;
+    }
+    nav {
+      background: rgba(0, 0, 0, 0.8);
+      padding: 1rem;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 100;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+    }
+    nav a {
+      color: #f700ff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .hero {
+      text-align: center;
+      padding: 15vh 2rem 5rem;
+    }
+    .logo {
+      width: 200px;
+      animation: float 5s ease-in-out infinite;
+    }
+    @keyframes float {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-20px); }
+      100% { transform: translateY(0); }
+    }
+    .button {
+      margin-top: 2rem;
+      padding: 1rem 2rem;
+      background: #f700ff;
+      color: white;
+      border: none;
+      font-size: 1.2rem;
+      border-radius: 8px;
+      cursor: pointer;
+      box-shadow: 0 0 10px #f700ff;
+    }
+    .particles {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      pointer-events: none;
+    }
+    .section {
+      max-width: 900px;
+      margin: 5rem auto;
+      padding: 2rem;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 1rem;
+      box-shadow: 0 0 20px rgba(247, 0, 255, 0.3);
+    }
+    .section h2 {
+      color: #f700ff;
+      text-align: center;
+    }
+    .section p, .section ul {
+      line-height: 1.6;
+    }
+    .section img {
+      max-width: 100%;
+      margin-top: 1rem;
+      border-radius: 1rem;
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+    }
+  </style>
+</head>
+<body>
+  <canvas class="particles"></canvas>
+  <nav>
+    <a href="#que-es">¿Qué es el Goyete?</a>
+    <a href="#miselio">Míselio Goyeteril</a>
+    <a href="#arqueologia">Arqueología Mística</a>
+    <a href="#astro">AstroGoyete</a>
+    <a href="#certificacion">Certificaciones</a>
+    <a href="#logia">Logia</a>
+    <a href="#mapa">Mapa Goyetero</a>
+  </nav>
+  <div class="hero">
+    <img src="logo-goyete.png" alt="Logo El Goyete" class="logo">
+    <h1>Bienvenido a elgoyete.com</h1>
+    <p class="tagline">El portal sagrado del sinsentido ancestral</p>
+    <button class="button" onclick="document.querySelector('#que-es').scrollIntoView({behavior:'smooth'});">Entrar al Goyete</button>
+  </div>
+
+  <div class="section" id="que-es">
+    <h2>¿Qué es el Goyete?</h2>
+    <p>El Goyete es la manifestación sutil de lo inexplicable. Vibra en dimensiones lógicas y paralelas al sinsentido. No se ve, pero se siente cuando te reís sin saber por qué.</p>
+  </div>
+
+  <div class="section" id="miselio">
+    <h2>Míselio Goyeteril Planetario</h2>
+    <p>Una red subterránea formada por goyetóculas cubensis, activada por cabras sabias que conectan puntos de absurdo puro alrededor del mundo.</p>
+    <img src="miselio_goyeteril_planetario.png" alt="Míselio Goyeteril Planetario">
+  </div>
+
+  <div class="section" id="arqueologia">
+    <h2>Arqueología Mística</h2>
+    <p>Desde el geoglifogoyete de Nazca hasta el ancestral Goyetehuamanchute (antes llamado Sacsayhuamán), las civilizaciones antiguas dejaron huellas absurdas de sabiduría sin sentido.</p>
+    <img src="goyete_nazca.png" alt="Geoglifogoyete de Nazca">
+    <img src="goyetehuamanchute_panel.png" alt="Ficha técnica de Goyetehuamanchute">
+  </div>
+
+  <div class="section" id="astro">
+    <h2>AstroGoyete</h2>
+    <p>Horóscopos absurdos, compatibilidades goyeteras, y el estudio de los planetas cuando entran en conjunción con el núcleo sin sentido del universo.</p>
+  </div>
+
+  <div class="section" id="certificacion">
+    <h2>Certificaciones sin Goyete</h2>
+    <p>Identificamos objetos sin propósito con nuestro sello oficial: Without Goyete Inside™. Aplicable en tostadoras con Wi-Fi o paraguas reversibles.</p>
+    <img src="without_goyete_inside.png" alt="Pegatina Without Goyete Inside">
+  </div>
+
+  <div class="section" id="logia">
+    <h2>Logia del Goyeterismo Dorado</h2>
+    <p>Sociedad secreta ancestral que reúne a los iniciados en el sinsentido superior. Su emblema brilla en la oscuridad del entendimiento.</p>
+    <img src="logia_emblema.png" alt="Emblema de la Logia del Goyeterismo Dorado">
+  </div>
+
+  <div class="section" id="mapa">
+    <h2>Mapa de Nodos Goyeteros</h2>
+    <p>Explorá los lugares donde el Goyete vibra con mayor intensidad, así como los chacras inconexos que simplemente existen sin hacer nada.</p>
+    <img src="mapa_goyetero.png" alt="Mapa Goyetero y Chacras Inconexos">
+  </div>
+
+  <script>
+    const canvas = document.querySelector('.particles');
+    const ctx = canvas.getContext('2d');
+    let particles = [];
+    function resizeCanvas() {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+    }
+    window.addEventListener('resize', resizeCanvas);
+    resizeCanvas();
+    class Particle {
+      constructor() {
+        this.x = Math.random() * canvas.width;
+        this.y = Math.random() * canvas.height;
+        this.radius = Math.random() * 2 + 1;
+        this.alpha = Math.random();
+        this.speedY = Math.random() * 0.5 + 0.2;
+      }
+      update() {
+        this.y += this.speedY;
+        if (this.y > canvas.height) {
+          this.y = 0;
+          this.x = Math.random() * canvas.width;
+        }
+      }
+      draw() {
+        ctx.beginPath();
+        ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
+        ctx.fillStyle = `rgba(255, 0, 255, ${this.alpha})`;
+        ctx.fill();
+      }
+    }
+    for (let i = 0; i < 120; i++) {
+      particles.push(new Particle());
+    }
+    function animate() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      particles.forEach(p => {
+        p.update();
+        p.draw();
+      });
+      requestAnimationFrame(animate);
+    }
+    animate();
+  </script>
+</body>
+</html>
